@@ -16,7 +16,9 @@ const messages = [
     "Host me somewhere!",
     "Cuter than your search bar!",
     "It's rosé pine, mom!",
-    "Don't refresh me!"
+    "Don't refresh me!",
+    "Technically, this can break with the right input...",
+    "Safer code than nuclear bombs!"
 ]
 
 Array.prototype.random = function () {
@@ -34,11 +36,8 @@ function update() {
     clock.innerHTML = t_str;
 }
 
-function randMsg() {
-    input.placeholder = messages.random()
-}
 setInterval(update, 1000);
-randMsg();
+input.placeholder = messages.random()
 update();
 
 input.addEventListener("keypress", function (event){
