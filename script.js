@@ -6,7 +6,7 @@ const messages = [
     "Stack overflow again?",
     "Stop procrastinating!",
     "Search with google...",
-    "Google search",
+    "Google search...",
     "Google with search...",
     "Refresh me!",
     "Made with love.",
