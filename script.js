@@ -18,7 +18,9 @@ const messages = [
     "It's rosé pine, mom!",
     "Don't refresh me!",
     "Technically, this can break with the right input...",
-    "Safer code than nuclear bombs!"
+    "Safer code than nuclear bombs!",
+    "Oree and Spen Fource!",
+    "Fork me!"
 ]
 
 Array.prototype.random = function () {
