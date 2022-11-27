@@ -1,4 +1,5 @@
 const clock = document.getElementById("time");
+const input = document.getElementsByClassName("searchbar")[0];
 
 function update() {
     var currentTime = new Date()
@@ -12,3 +13,13 @@ function update() {
 }
 setInterval(update, 1000);
 update();
+
+input.addEventListener("keypress", function (event){
+    if (event.key === "Enter"){
+        value = input.value;
+        value = value.replace(/ /g, "+")
+        window.location = "http://www.google.com.pk/search?btnG=1&pws=0&q=" + value
+    }
+})
+
+input.focus()
