@@ -1,2 +1,22 @@
 $header_font: PP Neue Montreal, Roboto, sans-serif;
 $code_font: Space Mono, Inconsolata, monospace;
+$base: #191724;
+$text: #e0def4;
+
+* {
+    padding: 0;
+    margin: 0;
+    color: $text;
+}
+
+body {
+    background-color: $base;
+    size: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#title {
+    font-family: $header_font;
+    font-weight: 800;
+}
