@@ -9,6 +9,12 @@ body {
   size: 100%;
   display: flex;
   justify-content: center;
+  margin: 10px;
+}
+
+#ascii p {
+  font-family: Space Mono, Inconsolata, monospace;
+  color: #f6c177;
 }
 
 #title {

@@ -1,7 +1,13 @@
+// fonts
 $header_font: PP Neue Montreal, Roboto, sans-serif;
 $code_font: Space Mono, Inconsolata, monospace;
+// colors
 $base: #191724;
 $text: #e0def4;
+$pine: #31748f;
+$gold: #f6c177;
+$love: #eb6f92;
+
 
 * {
     padding: 0;
@@ -14,6 +20,12 @@ body {
     size: 100%;
     display: flex;
     justify-content: center;
+    margin: 10px;
+}
+
+#ascii p{
+    font-family: $code_font;
+    color: $gold;
 }
 
 #title {
