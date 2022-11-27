@@ -1,5 +1,23 @@
 const clock = document.getElementById("time");
 const input = document.getElementsByClassName("searchbar")[0];
+const messages = [
+    "Good evening boss!",
+    "Hi!",
+    "Stack overflow again?",
+    "Stop procrastinating!",
+    "Search with google...",
+    "Google search",
+    "Google with search...",
+    "Refresh me!",
+    "Made with love.",
+    "Not bing!",
+    "What will you search?",
+    "Feeling lucky?",
+]
+
+Array.prototype.random = function () {
+  return this[Math.floor((Math.random()*this.length))];
+}
 
 function update() {
     var currentTime = new Date()
@@ -11,7 +29,12 @@ function update() {
     var t_str = hours + ":" + minutes + " ";
     clock.innerHTML = t_str;
 }
+
+function randMsg() {
+    input.placeholder = messages.random()
+}
 setInterval(update, 1000);
+randMsg();
 update();
 
 input.addEventListener("keypress", function (event){
