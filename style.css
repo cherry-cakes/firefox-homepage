@@ -14,10 +14,11 @@ body {
 
 #ascii p {
   font-family: Space Mono, Inconsolata, monospace;
-  color: #f6c177;
+  color: #31748f;
 }
 
-#title {
+.title {
   font-family: PP Neue Montreal, Roboto, sans-serif;
   font-weight: 800;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

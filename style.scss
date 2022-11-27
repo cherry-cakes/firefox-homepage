@@ -25,10 +25,11 @@ body {
 
 #ascii p{
     font-family: $code_font;
-    color: $gold;
+    color: $pine;
 }
 
-#title {
+.title {
     font-family: $header_font;
     font-weight: 800;
+    text-align: center;
 }
