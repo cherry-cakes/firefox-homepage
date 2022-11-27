@@ -7,19 +7,27 @@ $text: #e0def4;
 $pine: #31748f;
 $gold: #f6c177;
 $love: #eb6f92;
+$light-base: #fffaf3;
+$light-focus: #f2e9e1;
 
+.ascii_art {
+    margin: 20px;
+}
 
 * {
     padding: 0;
     margin: 0;
     color: $text;
+    font-size: 45px;
+    font-family: $header_font;
 }
 
 body {
     background-color: $base;
     size: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: 10px;
 }
 
@@ -29,7 +37,28 @@ body {
 }
 
 .title {
-    font-family: $header_font;
     font-weight: 800;
     text-align: center;
+}
+
+.searchbar {
+    width: 60%;
+    height: 60px;
+    border-radius: 30px;
+    background-color: $light-focus;
+    padding: 0px 10px;
+    font-size: 24px;
+    border: 0;
+    color: $base;
+    text-align: center;
+    font-weight: 400;
+}
+
+.searchbar:focus {
+    outline: outside;
+    outline-color: $love;
+    outline-style: dashed;
+    outline-width: 4px;
+
+    background-color: $light-base;
 }
