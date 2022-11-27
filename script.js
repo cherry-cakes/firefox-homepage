@@ -13,6 +13,10 @@ const messages = [
     "Not bing!",
     "What will you search?",
     "Feeling lucky?",
+    "Host me somewhere!",
+    "Cuter than your search bar!",
+    "It's rosé pine, mom!",
+    "Don't refresh me!"
 ]
 
 Array.prototype.random = function () {
