@@ -7,13 +7,45 @@ $text: #e0def4;
 $pine: #31748f;
 $gold: #f6c177;
 $love: #eb6f92;
+$rose: #ebbcba;
 $light-base: #fffaf3;
 $light-focus: #f2e9e1;
+$subtle: #26233a; 
 
 .ascii_art {
     margin: 20px;
 }
 
+.fav-icon {
+    width: 36px;
+    margin-left: 8px;
+    margin-right: 8px;
+    transition-duration: 200ms;
+}
+.fav-icon path {
+    color: $text;
+    transition-duration: 200ms;
+}
+
+.fav-icon:hover path {
+    color: $rose;
+}
+
+.links {
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.fav-icon:hover {
+    width: 48px;
+
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
 * {
     padding: 0;
     margin: 0;
@@ -36,6 +68,12 @@ body {
     color: $pine;
 }
 
+.line {
+  height: 2px;
+  border-radius: 20px;
+  background-color: $subtle;
+  width: 60%;
+}
 .title {
     font-weight: 800;
     text-align: center;
@@ -59,6 +97,7 @@ body {
   width: 60%;
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 #search-icon {
@@ -68,6 +107,7 @@ body {
 #search-icon path {
     color: $love;
 }
+
 
 .searchbar:focus {
     outline: outside;
