@@ -34,11 +34,12 @@ $subtle: #26233a;
 .links {
     height: 64px;
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
 .fav-icon:hover {
-    width: 48px; // comment
+    width: 48px; 
 
 }
 
